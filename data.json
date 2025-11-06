@@ -1,0 +1,322 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Espada de Cobre",
+      "icon": "⚔️",
+      "category": "Arma",
+      "rarity": "Comum",
+      "description": "Uma espada básica feita de cobre. Perfeita para iniciantes.",
+      "damage": "5",
+      "speed": "Lenta",
+      "howToGet": "Craftada com 8 barras de cobre em uma bigorna de ferro"
+    },
+    {
+      "id": 2,
+      "name": "Picareta de Ouro",
+      "icon": "⛏️",
+      "category": "Ferramenta",
+      "rarity": "Incomum",
+      "description": "Ferramenta de mineração eficiente feita de ouro puro.",
+      "mining": "55",
+      "speed": "Rápida",
+      "howToGet": "Craftada com 12 barras de ouro e 3 madeiras em uma bigorna"
+    },
+    {
+      "id": 3,
+      "name": "Poção de Cura Menor",
+      "icon": "🧪",
+      "category": "Poção",
+      "rarity": "Comum",
+      "description": "Restaura 50 pontos de vida instantaneamente.",
+      "effect": "+50 HP",
+      "duration": "Instantâneo",
+      "howToGet": "Craftada com 1 gel e 1 cogumelo em uma garrafa"
+    },
+    {
+      "id": 4,
+      "name": "Asas de Anjo",
+      "icon": "🪽",
+      "category": "Acessório",
+      "rarity": "Raro",
+      "description": "Permite voar por tempo limitado e planar lentamente.",
+      "effect": "Voo por 2 segundos",
+      "howToGet": "Encontrado em baús flutuantes no céu"
+    },
+    {
+      "id": 5,
+      "name": "Terra Blade",
+      "icon": "🗡️",
+      "category": "Arma",
+      "rarity": "Lendário",
+      "description": "Uma lâmina lendária que dispara projéteis de energia.",
+      "damage": "115",
+      "speed": "Rápida",
+      "howToGet": "Combinar True Excalibur e True Night's Edge"
+    },
+    {
+      "id": 6,
+      "name": "Machado de Platina",
+      "icon": "🪓",
+      "category": "Ferramenta",
+      "rarity": "Incomum",
+      "description": "Excelente para cortar árvores e usar em combate.",
+      "damage": "8",
+      "mining": "35",
+      "howToGet": "Craftado com 12 barras de platina e 3 madeiras"
+    },
+    {
+      "id": 7,
+      "name": "Poção de Regeneração",
+      "icon": "💊",
+      "category": "Poção",
+      "rarity": "Incomum",
+      "description": "Aumenta drasticamente a regeneração de vida.",
+      "effect": "+4 HP/s",
+      "duration": "8 minutos",
+      "howToGet": "Craftada com daybloom e cogumelo em uma garrafa"
+    },
+    {
+      "id": 8,
+      "name": "Botas Hermes",
+      "icon": "👟",
+      "category": "Acessório",
+      "rarity": "Raro",
+      "description": "Aumenta muito a velocidade de movimento após correr.",
+      "effect": "+50% velocidade",
+      "howToGet": "Encontrado em baús subterrâneos"
+    },
+    {
+      "id": 9,
+      "name": "Arco de Ouro",
+      "icon": "🏹",
+      "category": "Arma",
+      "rarity": "Incomum",
+      "description": "Um arco robusto que dispara flechas com precisão.",
+      "damage": "11",
+      "speed": "Média",
+      "howToGet": "Craftado com 8 barras de ouro em uma bigorna"
+    },
+    {
+      "id": 10,
+      "name": "Espada Larga",
+      "icon": "⚔️",
+      "category": "Arma",
+      "rarity": "Comum",
+      "description": "Uma espada larga e pesada com bom alcance.",
+      "damage": "13",
+      "speed": "Muito lenta",
+      "howToGet": "Dropada por Skeletons na Dungeon"
+    },
+    {
+      "id": 11,
+      "name": "Grappling Hook",
+      "icon": "🪝",
+      "category": "Acessório",
+      "rarity": "Incomum",
+      "description": "Permite se prender a superfícies e se puxar.",
+      "effect": "3 ganchos",
+      "howToGet": "Craftado com 1 hook e 3 correntes"
+    },
+    {
+      "id": 12,
+      "name": "Picareta de Pesadelo",
+      "icon": "⛏️",
+      "category": "Ferramenta",
+      "rarity": "Raro",
+      "description": "Capaz de minerar Ebonstone e minerais corruptos.",
+      "mining": "65",
+      "speed": "Rápida",
+      "howToGet": "Craftada com 12 barras de demonite e 6 shadow scales"
+    },
+    {
+      "id": 13,
+      "name": "Poção de Ironskin",
+      "icon": "🧪",
+      "category": "Poção",
+      "rarity": "Incomum",
+      "description": "Aumenta temporariamente a defesa.",
+      "effect": "+8 Defesa",
+      "duration": "6 minutos",
+      "howToGet": "Craftada com daybloom e iron ore em uma garrafa"
+    },
+    {
+      "id": 14,
+      "name": "Cloud in a Bottle",
+      "icon": "☁️",
+      "category": "Acessório",
+      "rarity": "Incomum",
+      "description": "Permite dar um pulo duplo.",
+      "effect": "Pulo duplo",
+      "howToGet": "Encontrado em baús de ilha flutuante"
+    },
+    {
+      "id": 15,
+      "name": "Arco Molten",
+      "icon": "🏹",
+      "category": "Arma",
+      "rarity": "Raro",
+      "description": "Dispara flechas flamejantes que queimam inimigos.",
+      "damage": "31",
+      "speed": "Rápida",
+      "howToGet": "Craftado com 30 barras de hellstone em uma bigorna"
+    },
+    {
+      "id": 16,
+      "name": "Minishark",
+      "icon": "🔫",
+      "category": "Arma",
+      "rarity": "Raro",
+      "description": "Uma metralhadora rápida que consome balas.",
+      "damage": "6",
+      "speed": "Muito rápida",
+      "howToGet": "Comprado do Arms Dealer por 35 moedas de ouro"
+    },
+    {
+      "id": 17,
+      "name": "Barra de Ouro",
+      "icon": "📦",
+      "category": "Material",
+      "rarity": "Incomum",
+      "description": "Material precioso usado em diversas receitas.",
+      "howToGet": "Fundida a partir de 4 minérios de ouro"
+    },
+    {
+      "id": 18,
+      "name": "Magic Mirror",
+      "icon": "🪞",
+      "category": "Acessório",
+      "rarity": "Incomum",
+      "description": "Teleporta você de volta ao ponto de spawn.",
+      "effect": "Teleporte instantâneo",
+      "howToGet": "Encontrado em baús subterrâneos"
+    },
+    {
+      "id": 19,
+      "name": "Poção de Mana",
+      "icon": "💙",
+      "category": "Poção",
+      "rarity": "Comum",
+      "description": "Restaura 100 pontos de mana instantaneamente.",
+      "effect": "+100 Mana",
+      "duration": "Instantâneo",
+      "howToGet": "Craftada com falling star e gel em uma garrafa"
+    },
+    {
+      "id": 20,
+      "name": "Excalibur",
+      "icon": "⚔️",
+      "category": "Arma",
+      "rarity": "Épico",
+      "description": "Uma espada lendária com grande poder destrutivo.",
+      "damage": "66",
+      "speed": "Rápida",
+      "howToGet": "Craftada com 12 barras hallowed em uma bigorna mítica"
+    },
+    {
+      "id": 21,
+      "name": "Ankh Shield",
+      "icon": "🛡️",
+      "category": "Acessório",
+      "rarity": "Lendário",
+      "description": "Fornece imunidade a quase todos os debuffs.",
+      "defense": "4",
+      "effect": "Imunidade a debuffs",
+      "howToGet": "Combinar Obsidian Shield e Ankh Charm"
+    },
+    {
+      "id": 22,
+      "name": "Martelo de Prata",
+      "icon": "🔨",
+      "category": "Ferramenta",
+      "rarity": "Comum",
+      "description": "Usado para quebrar objetos e paredes.",
+      "mining": "40",
+      "howToGet": "Craftado com 10 barras de prata e 3 madeiras"
+    },
+    {
+      "id": 23,
+      "name": "Poção de Gravidade",
+      "icon": "🧪",
+      "category": "Poção",
+      "rarity": "Raro",
+      "description": "Permite inverter a gravidade com a tecla UP.",
+      "effect": "Inversão de gravidade",
+      "duration": "3 minutos",
+      "howToGet": "Craftada com fireblossom, feather e bottled water"
+    },
+    {
+      "id": 24,
+      "name": "Star Cannon",
+      "icon": "🌟",
+      "category": "Arma",
+      "rarity": "Épico",
+      "description": "Dispara estrelas cadentes com dano devastador.",
+      "damage": "60",
+      "speed": "Rápida",
+      "howToGet": "Craftada com minishark, 20 meteorite bars e 5 falling stars"
+    },
+    {
+      "id": 25,
+      "name": "Barra de Adamantite",
+      "icon": "📦",
+      "category": "Material",
+      "rarity": "Épico",
+      "description": "Material do Hardmode extremamente resistente.",
+      "howToGet": "Fundida a partir de 5 minérios de adamantite"
+    },
+    {
+      "id": 26,
+      "name": "Vampire Knives",
+      "icon": "🔪",
+      "category": "Arma",
+      "rarity": "Lendário",
+      "description": "Facas que roubam vida dos inimigos atingidos.",
+      "damage": "27",
+      "effect": "Roubo de vida",
+      "howToGet": "Dropadas no Dungeon Crimson Chest"
+    },
+    {
+      "id": 27,
+      "name": "Funil de Lava",
+      "icon": "🌋",
+      "category": "Acessório",
+      "rarity": "Incomum",
+      "description": "Permite caminhar sobre lava por tempo limitado.",
+      "effect": "7 segundos na lava",
+      "howToGet": "Craftado com obsidian skull e lava charm"
+    },
+    {
+      "id": 28,
+      "name": "Poção de Invisibilidade",
+      "icon": "👻",
+      "category": "Poção",
+      "rarity": "Raro",
+      "description": "Torna você invisível para inimigos.",
+      "effect": "Invisibilidade",
+      "duration": "5 minutos",
+      "howToGet": "Craftada com blinkroot e moonglow em uma garrafa"
+    },
+    {
+      "id": 29,
+      "name": "Megashark",
+      "icon": "🔫",
+      "category": "Arma",
+      "rarity": "Épico",
+      "description": "Versão melhorada do Minishark com maior dano.",
+      "damage": "25",
+      "speed": "Extremamente rápida",
+      "howToGet": "Craftado com minishark, 20 soul of might, 5 illegal gun parts, 1 shark fin"
+    },
+    {
+      "id": 30,
+      "name": "Armor Polish",
+      "icon": "✨",
+      "category": "Acessório",
+      "rarity": "Raro",
+      "description": "Fornece imunidade a quebra de armadura e fraqueza.",
+      "effect": "Imunidade a debuffs",
+      "howToGet": "Dropado por Armored Skeletons na Dungeon"
+    }
+  ]
+}

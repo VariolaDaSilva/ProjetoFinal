@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Terraria - Explore os Itens do Jogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">⚔️</span>
+                    <span class="logo-text">Terraria Catalog</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Catálogo</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <h1>Catálogo de Itens do Terraria</h1>
+            <p>Explore armas, ferramentas, acessórios e muito mais!</p>
+        </section>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Pesquisar itens..." class="search-input">
+                
+                <div class="filters">
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">Todas as Categorias</option>
+                        <option value="Arma">Armas</option>
+                        <option value="Ferramenta">Ferramentas</option>
+                        <option value="Acessório">Acessórios</option>
+                        <option value="Poção">Poções</option>
+                        <option value="Material">Materiais</option>
+                    </select>
+
+                    <select id="rarityFilter" class="filter-select">
+                        <option value="all">Todas as Raridades</option>
+                        <option value="Comum">Comum</option>
+                        <option value="Incomum">Incomum</option>
+                        <option value="Raro">Raro</option>
+                        <option value="Épico">Épico</option>
+                        <option value="Lendário">Lendário</option>
+                    </select>
+
+                    <button id="resetBtn" class="reset-btn">🔄 Limpar Filtros</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div id="itemCount" class="item-count">Carregando itens...</div>
+            <div id="catalog" class="catalog-grid">
+                <!-- Os itens serão carregados aqui via JavaScript -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>😢 Nenhum item encontrado</p>
+                <p>Tente ajustar os filtros ou pesquisar por outro termo</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para detalhes do item -->
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Detalhes do item serão carregados aqui -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Catálogo Terraria - Projeto Educacional</p>
+            <p>Terraria é propriedade da Re-Logic</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
