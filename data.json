@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "King Slime",
-      "icon": "👑",
+      "icon": "imagens/king-slime.png",
       "order": 1,
       "difficulty": "Pré-Hardmode",
       "description": "Um enorme slime coroado que governa sobre todos os outros slimes. É considerado o chefe mais fácil do jogo e é opcional, mas oferece boas recompensas iniciais.",
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "name": "Olho de Cthulhu",
-      "icon": "👁️",
+      "icon": "imagens/eye-of-cthulhu-phase-2.png",
       "order": 2,
       "difficulty": "Pré-Hardmode",
       "description": "Um olho demoníaco gigante e o primeiro chefe principal que a maioria dos jogadores enfrenta. Tem duas fases distintas, sendo a segunda muito mais agressiva.",
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "name": "Devorador de Mundos",
-      "icon": "🪱",
+      "icon": "imagens/the-eater-of-worlds.png",
       "order": 3,
       "difficulty": "Pré-Hardmode",
       "description": "Um enorme verme segmentado que habita a Corruption. Cada segmento pode ser destruído individualmente, dividindo o chefe em vermes menores. Exclusivo de mundos com Corruption.",
@@ -45,7 +45,7 @@
     {
       "id": 4,
       "name": "Cérebro de Cthulhu",
-      "icon": "🧠",
+      "icon": "imagens/Brain-of-Cthulhu_(Second_Phase).gif",
       "order": 3,
       "difficulty": "Pré-Hardmode",
       "description": "Um cérebro voador protegido por Creepers. É o chefe da Crimson e a alternativa ao Eater of Worlds. Tem duas fases: na primeira está invisível a maior parte do tempo.",
@@ -58,7 +58,7 @@
     },
     {
       "id": 5,
-      "name": "Abelha Rainha",
+      "name": "imagens/Queen_Bee.gif",
       "icon": "🐝",
       "order": 4,
       "difficulty": "Pré-Hardmode",
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "name": "Skeletron",
-      "icon": "💀",
+      "icon": "imagens/Skeletron.webp",
       "order": 5,
       "difficulty": "Pré-Hardmode",
       "description": "O guardião amaldiçoado da Dungeon. Um esqueleto gigante com mãos separadas que atacam independentemente. Deve ser derrotado para acessar a Dungeon.",
@@ -87,7 +87,7 @@
     {
       "id": 7,
       "name": "Parede de Carne",
-      "icon": "🧱",
+      "icon": "imagens/Wall_of_Flesh.gif",
       "order": 6,
       "difficulty": "Pré-Hardmode",
       "description": "O último chefe do Pré-Hardmode e guardião do Hardmode. Uma parede gigante de carne com olhos e boca que persegue o jogador através do Underworld. Derrotá-lo ativa o Hardmode.",
@@ -101,7 +101,7 @@
     {
       "id": 8,
       "name": "Queen Slime",
-      "icon": "👑💎",
+      "icon": "imagens/Queen_Slime_29.webp",
       "order": 7,
       "difficulty": "Hardmode",
       "description": "Uma versão Hardmode cristalina e gelada do King Slime. Voa pelo ar e invoca slimes alados. É o chefe mais fácil do Hardmode inicial.",
@@ -115,7 +115,7 @@
     {
       "id": 9,
       "name": "Os Gêmeos",
-      "icon": "👁️👁️",
+      "icon": "imagens/The_Twins.webp",
       "order": 8,
       "difficulty": "Hardmode",
       "description": "Versão Hardmode mecanizada do Eye of Cthulhu. São dois chefes separados: Retinazer (dispara lasers) e Spazmatism (dispara cursed flames). Um dos três Mechanical Bosses.",
@@ -129,7 +129,7 @@
     {
       "id": 10,
       "name": "O Destruidor",
-      "icon": "🤖🪱",
+      "icon": "imagens/The_Destroyer.png",
       "order": 8,
       "difficulty": "Hardmode",
       "description": "Versão Hardmode mecanizada do Eater of Worlds. Um verme mecânico gigante que dispara lasers e invoca Probes. Considerado o mais fácil dos três Mechanical Bosses.",
@@ -143,7 +143,7 @@
     {
       "id": 11,
       "name": "Skeletron Prime",
-      "icon": "💀🤖",
+      "icon": "imagens/Skeletronprimeu.webp",
       "order": 8,
       "difficulty": "Hardmode",
       "description": "Versão Hardmode mecanizada do Skeletron. Possui quatro braços mecânicos diferentes: Prime Cannon, Prime Saw, Prime Vice e Prime Laser. Considerado o mais difícil dos três Mechanical Bosses.",
@@ -157,7 +157,7 @@
     {
       "id": 12,
       "name": "Plantera",
-      "icon": "🌺",
+      "icon": "imagens/Plantera_(First_form).gif",
       "order": 9,
       "difficulty": "Pós-Plantera",
       "description": "Um imenso bulbo plantoso que vive nas profundezas da selva subterrânea. É extremamente agressiva e poderosa. Derrotá-la abre a próxima fase do Hardmode.",
@@ -171,7 +171,7 @@
     {
       "id": 13,
       "name": "Golém",
-      "icon": "🗿",
+      "icon": "imagens/Golem.png",
       "order": 10,
       "difficulty": "Pós-Plantera",
       "description": "Um golem de pedra antigo que guarda o Lihzahrd Temple. Possui corpo, cabeça e dois punhos separados. Surpreendentemente mais fácil que Plantera.",
@@ -185,7 +185,7 @@
     {
       "id": 14,
       "name": "Duque Fishron",
-      "icon": "🦈",
+      "icon": "imagens/Duke_Fishron.webp",
       "order": 11,
       "difficulty": "Pós-Plantera",
       "description": "Um tubarão-porco mutante e um dos chefes mais difíceis do jogo. É tecnicamente opcional mas oferece equipamento de nível superior. Possui três fases com dificuldade crescente.",
@@ -199,7 +199,7 @@
     {
       "id": 15,
       "name": "Imperatriz da Luz",
-      "icon": "🦋",
+      "icon": "imagens/Empress_of_Light.gif",
       "order": 11,
       "difficulty": "Pós-Plantera",
       "description": "Uma poderosa imperatriz das fadas que governa o Hallow. Um dos chefes mais desafiadores, especialmente durante o dia onde qualquer hit mata instantaneamente.",
@@ -213,7 +213,7 @@
     {
       "id": 16,
       "name": "Cultista Lunático",
-      "icon": "🧙",
+      "icon": "imagens/cultist.png",
       "order": 12,
       "difficulty": "Pós-Plantera",
       "description": "O líder de um culto misterioso que adora os Celestial Pillars. Aparece após derrotar Golem. Derrotá-lo inicia os Lunar Events, a fase final do jogo.",
@@ -227,7 +227,7 @@
     {
       "id": 17,
       "name": "Moon Lord, O Senhor da Lua",
-      "icon": "🌙",
+      "icon": "imagens/Moon_Lord.webp",
       "order": 13,
       "difficulty": "Pós-Plantera",
       "description": "O chefe final do Terraria e irmão de Cthulhu. Um ser cósmico colossal com partes corporais independentes. O desafio definitivo do jogo.",
