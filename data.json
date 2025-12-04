@@ -58,8 +58,8 @@
     },
     {
       "id": 5,
-      "name": "imagens/Queen_Bee.gif",
-      "icon": "🐝",
+      "name": "Abelha Rainha",
+      "icon": "https://static.wikia.nocookie.net/terraria_gamepedia/images/6/60/Queen_Bee.gif/revision/latest?cb=20200523215116&format=original",
       "order": 4,
       "difficulty": "Pré-Hardmode",
       "description": "A rainha das abelhas que governa a colmeia subterrânea na selva. É um chefe opcional mas suas recompensas são muito úteis para a progressão.",
@@ -241,6 +241,7 @@
   ]
 
 }
+
 
 
 
