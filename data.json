@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "name": "Eye of Cthulhu",
+      "name": "Olho de Cthulhu",
       "icon": "👁️",
       "order": 2,
       "difficulty": "Pré-Hardmode",
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "name": "Eater of Worlds",
+      "name": "Devorador de Mundos",
       "icon": "🪱",
       "order": 3,
       "difficulty": "Pré-Hardmode",
@@ -44,7 +44,7 @@
     },
     {
       "id": 4,
-      "name": "Brain of Cthulhu",
+      "name": "Cérebro de Cthulhu",
       "icon": "🧠",
       "order": 3,
       "difficulty": "Pré-Hardmode",
@@ -58,7 +58,7 @@
     },
     {
       "id": 5,
-      "name": "Queen Bee",
+      "name": "Abelha Rainha",
       "icon": "🐝",
       "order": 4,
       "difficulty": "Pré-Hardmode",
@@ -86,7 +86,7 @@
     },
     {
       "id": 7,
-      "name": "Wall of Flesh",
+      "name": "Parede de Carne",
       "icon": "🧱",
       "order": 6,
       "difficulty": "Pré-Hardmode",
@@ -114,7 +114,7 @@
     },
     {
       "id": 9,
-      "name": "The Twins",
+      "name": "Os Gêmeos",
       "icon": "👁️👁️",
       "order": 8,
       "difficulty": "Hardmode",
@@ -128,7 +128,7 @@
     },
     {
       "id": 10,
-      "name": "The Destroyer",
+      "name": "O Destruidor",
       "icon": "🤖🪱",
       "order": 8,
       "difficulty": "Hardmode",
@@ -170,7 +170,7 @@
     },
     {
       "id": 13,
-      "name": "Golem",
+      "name": "Golém",
       "icon": "🗿",
       "order": 10,
       "difficulty": "Pós-Plantera",
@@ -184,7 +184,7 @@
     },
     {
       "id": 14,
-      "name": "Duke Fishron",
+      "name": "Duque Fishron",
       "icon": "🦈",
       "order": 11,
       "difficulty": "Pós-Plantera",
@@ -198,7 +198,7 @@
     },
     {
       "id": 15,
-      "name": "Empress of Light",
+      "name": "Imperatriz da Luz",
       "icon": "🦋",
       "order": 11,
       "difficulty": "Pós-Plantera",
@@ -212,7 +212,7 @@
     },
     {
       "id": 16,
-      "name": "Lunatic Cultist",
+      "name": "Cultista Lunático",
       "icon": "🧙",
       "order": 12,
       "difficulty": "Pós-Plantera",
@@ -226,7 +226,7 @@
     },
     {
       "id": 17,
-      "name": "Moon Lord",
+      "name": "Moon Lord, O Senhor da Lua",
       "icon": "🌙",
       "order": 13,
       "difficulty": "Pós-Plantera",
