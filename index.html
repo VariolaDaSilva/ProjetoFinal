@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Terraria - Explore os Itens do Jogo</title>
+    <title>Chefes do Terraria - Guia Completo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,11 +11,11 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="imagens/terraria_logo.png" alt="terraria_logo">
-                    <span class="logo-text">Terraria Catalog</span>
+                    <span class="logo-icon">👾</span>
+                    <span class="logo-text">Terraria Bosses</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Catálogo</a></li>
+                    <li><a href="index.html" class="active">Chefes</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
@@ -25,31 +25,25 @@
 
     <main class="main-content">
         <section class="hero-section">
-            <h1>Catálogo de Itens do Terraria</h1>
-            <p>Explore armas, ferramentas, acessórios e muito mais!</p>
+            <h1>Guia de Chefes do Terraria</h1>
+            <p>Conheça todos os chefes na ordem de progressão do jogo</p>
         </section>
 
         <section class="search-section">
             <div class="search-container">
-                <input type="text" id="searchInput" placeholder="🔍 Pesquisar itens..." class="search-input">
+                <input type="text" id="searchInput" placeholder="🔍 Pesquisar chefes..." class="search-input">
                 
                 <div class="filters">
-                    <select id="categoryFilter" class="filter-select">
-                        <option value="all">Todas as Categorias</option>
-                        <option value="Arma">Armas</option>
-                        <option value="Ferramenta">Ferramentas</option>
-                        <option value="Acessório">Acessórios</option>
-                        <option value="Poção">Poções</option>
-                        <option value="Material">Materiais</option>
+                    <select id="difficultyFilter" class="filter-select">
+                        <option value="all">Todas as Dificuldades</option>
+                        <option value="Pré-Hardmode">Pré-Hardmode</option>
+                        <option value="Hardmode">Hardmode</option>
+                        <option value="Pós-Plantera">Pós-Plantera</option>
                     </select>
 
-                    <select id="rarityFilter" class="filter-select">
-                        <option value="all">Todas as Raridades</option>
-                        <option value="Comum">Comum</option>
-                        <option value="Incomum">Incomum</option>
-                        <option value="Raro">Raro</option>
-                        <option value="Épico">Épico</option>
-                        <option value="Lendário">Lendário</option>
+                    <select id="orderFilter" class="filter-select">
+                        <option value="progression">Ordem de Progressão</option>
+                        <option value="alphabetical">Ordem Alfabética</option>
                     </select>
 
                     <button id="resetBtn" class="reset-btn">🔄 Limpar Filtros</button>
@@ -58,30 +52,30 @@
         </section>
 
         <section class="catalog-section">
-            <div id="itemCount" class="item-count">Carregando itens...</div>
-            <div id="catalog" class="catalog-grid">
-                <!-- Os itens serão carregados aqui via JavaScript -->
+            <div id="bossCount" class="item-count">Carregando chefes...</div>
+            <div id="bossCatalog" class="catalog-grid">
+                <!-- Os chefes serão carregados aqui via JavaScript -->
             </div>
             <div id="noResults" class="no-results" style="display: none;">
-                <p>😢 Nenhum item encontrado</p>
+                <p>😢 Nenhum chefe encontrado</p>
                 <p>Tente ajustar os filtros ou pesquisar por outro termo</p>
             </div>
         </section>
     </main>
 
-    <!-- Modal para detalhes do item -->
-    <div id="itemModal" class="modal">
+    <!-- Modal para detalhes do chefe -->
+    <div id="bossModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div id="modalBody">
-                <!-- Detalhes do item serão carregados aqui -->
+                <!-- Detalhes do chefe serão carregados aqui -->
             </div>
         </div>
     </div>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Catálogo Terraria - Projeto Educacional</p>
+            <p>&copy; 2024 Guia de Chefes Terraria - Projeto Educacional</p>
             <p>Terraria é propriedade da Re-Logic</p>
         </div>
     </footer>

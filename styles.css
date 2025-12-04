@@ -6,11 +6,11 @@
 }
 
 :root {
-    --primary-color: #4a90e2;
+    --primary-color: #8b2635;
     --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
-    --bg-color: #1a1a2e;
-    --card-bg: #16213e;
+    --accent-color: #d32f2f;
+    --bg-color: #0a0e1a;
+    --card-bg: #1a1f35;
     --text-color: #ecf0f1;
     --text-muted: #95a5a6;
     --success-color: #27ae60;
@@ -21,12 +21,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    background-image: url('imagens/terraria.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center top;
-    background-attachment: fixed;
+    background: linear-gradient(135deg, #0a0e1a 0%, #1a1f35 100%);
     color: var(--text-color);
     min-height: 100vh;
     line-height: 1.6;
@@ -34,14 +29,14 @@ body {
 
 /* Navbar */
 .navbar {
-    background: rgba(22, 33, 62, 0.95);
+    background: rgba(26, 31, 53, 0.95);
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--primary-color);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -64,6 +59,12 @@ body {
 
 .logo-icon {
     font-size: 2rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 .nav-menu {
@@ -103,10 +104,11 @@ body {
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, var(--primary-color), #9b59b6);
+    background: linear-gradient(45deg, var(--primary-color), #e74c3c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 0 30px rgba(139, 38, 53, 0.3);
 }
 
 .hero-section p {
@@ -123,7 +125,8 @@ body {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(139, 38, 53, 0.3);
 }
 
 .search-input {
@@ -140,8 +143,8 @@ body {
 
 .search-input:focus {
     outline: none;
-    border-color: #9b59b6;
-    box-shadow: 0 0 20px rgba(155, 89, 182, 0.3);
+    border-color: #e74c3c;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
 }
 
 .filters {
@@ -164,7 +167,7 @@ body {
 }
 
 .filter-select:hover {
-    border-color: #9b59b6;
+    border-color: #e74c3c;
 }
 
 .reset-btn {
@@ -180,9 +183,9 @@ body {
 }
 
 .reset-btn:hover {
-    background: #c0392b;
+    background: #b71c1c;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+    box-shadow: 0 4px 15px rgba(211, 47, 47, 0.5);
 }
 
 /* Catalog Section */
@@ -195,7 +198,7 @@ body {
 
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-bottom: 3rem;
 }
@@ -218,7 +221,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), #9b59b6);
+    background: linear-gradient(90deg, var(--primary-color), #e74c3c);
     transform: scaleX(0);
     transition: var(--transition);
 }
@@ -230,49 +233,84 @@ body {
 .item-card:hover {
     transform: translateY(-8px);
     border-color: var(--primary-color);
-    box-shadow: 0 12px 40px rgba(74, 144, 226, 0.3);
+    box-shadow: 0 12px 40px rgba(139, 38, 53, 0.5);
+}
+
+.boss-order {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .item-icon {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px rgba(139, 38, 53, 0.5));
 }
 
 .item-name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     color: var(--text-color);
+    text-align: center;
 }
 
-.item-category {
+.item-difficulty {
     display: inline-block;
-    padding: 0.3rem 0.8rem;
-    background: var(--primary-color);
+    padding: 0.4rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.item-rarity {
-    display: inline-block;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    margin-left: 0.5rem;
+.difficulty-pré-hardmode { 
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
 }
 
-.rarity-comum { background: #95a5a6; }
-.rarity-incomum { background: #27ae60; }
-.rarity-raro { background: #3498db; }
-.rarity-épico { background: #9b59b6; }
-.rarity-lendário { background: #f39c12; }
+.difficulty-hardmode { 
+    background: linear-gradient(135deg, #e67e22, #f39c12);
+    color: white;
+}
+
+.difficulty-pós-plantera { 
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    color: white;
+}
 
 .item-description {
     color: var(--text-muted);
     font-size: 0.95rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    line-height: 1.5;
+}
+
+.summon-info {
+    background: var(--bg-color);
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.summon-info strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.3rem;
 }
 
 .no-results {
@@ -295,20 +333,23 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(5px);
 }
 
 .modal-content {
     background: var(--card-bg);
-    margin: 5% auto;
-    padding: 2rem;
+    margin: 3% auto;
+    padding: 2.5rem;
     border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
     position: relative;
     animation: slideDown 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
 }
 
 @keyframes slideDown {
@@ -324,7 +365,9 @@ body {
 
 .close-modal {
     color: var(--text-muted);
-    float: right;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
@@ -333,18 +376,21 @@ body {
 
 .close-modal:hover {
     color: var(--accent-color);
+    transform: rotate(90deg);
 }
 
 .modal-icon {
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: center;
     margin-bottom: 1rem;
+    filter: drop-shadow(0 0 20px rgba(139, 38, 53, 0.6));
 }
 
 .modal-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .modal-stats {
@@ -352,17 +398,38 @@ body {
     padding: 1.5rem;
     border-radius: 8px;
     margin: 1.5rem 0;
+    border: 1px solid rgba(139, 38, 53, 0.3);
+}
+
+.modal-stats h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .stat-row {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .stat-row:last-child {
     border-bottom: none;
+}
+
+.summon-box {
+    background: linear-gradient(135deg, rgba(139, 38, 53, 0.2), rgba(231, 76, 60, 0.2));
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 2px solid var(--primary-color);
+}
+
+.summon-box h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
 }
 
 /* About Page */
@@ -387,7 +454,8 @@ body {
     padding: 2rem;
     border-radius: var(--border-radius);
     margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(139, 38, 53, 0.3);
 }
 
 .about-card h2 {
@@ -407,7 +475,7 @@ body {
 }
 
 .feature-list li::before {
-    content: '⚡';
+    content: '⚔️';
     position: absolute;
     left: 0;
 }
@@ -430,6 +498,13 @@ body {
     padding: 1.5rem;
     background: var(--bg-color);
     border-radius: 8px;
+    border: 1px solid rgba(139, 38, 53, 0.2);
+    transition: var(--transition);
+}
+
+.feature-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
 }
 
 .feature-icon {
@@ -476,7 +551,8 @@ body {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(139, 38, 53, 0.3);
 }
 
 .contact-form .form-group {
@@ -507,8 +583,8 @@ body {
 .contact-form select:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #9b59b6;
-    box-shadow: 0 0 15px rgba(155, 89, 182, 0.3);
+    border-color: #e74c3c;
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
 }
 
 .submit-btn {
@@ -525,9 +601,9 @@ body {
 }
 
 .submit-btn:hover {
-    background: #357abd;
+    background: #6d1f29;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+    box-shadow: 0 6px 20px rgba(139, 38, 53, 0.5);
 }
 
 .contact-info {
@@ -540,7 +616,8 @@ body {
     background: var(--card-bg);
     padding: 1.5rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(139, 38, 53, 0.3);
 }
 
 .info-card h3 {
@@ -551,6 +628,7 @@ body {
 .social-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .social-link {
@@ -563,7 +641,7 @@ body {
 }
 
 .social-link:hover {
-    background: #357abd;
+    background: #6d1f29;
     transform: translateY(-2px);
 }
 
@@ -583,6 +661,7 @@ body {
     position: absolute;
     left: 0;
     color: var(--success-color);
+    font-weight: bold;
 }
 
 .form-message {
@@ -646,5 +725,10 @@ footer {
 
     .features-grid {
         grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
     }
 }
