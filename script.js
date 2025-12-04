@@ -18,14 +18,28 @@ async function loadData() {
         console.error('Erro:', error);
         document.getElementById('bossCatalog').innerHTML = `
             <div style="grid-column: 1/-1; text-align: center; padding: 2rem;">
-                <p style="color: #e74c3c; font-size: 1.2rem;">❌ Erro ao carregar os chefes</p>
+                <p style="color: #e74c3c; font-size: 1.2rem;">Erro ao carregar os chefes</p>
                 <p style="color: #95a5a6;">Verifique se o arquivo data.json está presente</p>
             </div>
         `;
     }
 }
 
+// Função para renderizar ícone (emoji ou imagem)
+function renderIcon(icon) {
+    // Verifica se é uma URL (começa com http ou https)
+    if (icon.startsWith('http://') || icon.startsWith('https://')) {
+        return `<img src="${icon}" alt="Boss icon" onerror="this.onerror=null; this.src=''; this.alt='❌ Imagem não carregou'">`;
+    }
+    // Verifica se é um caminho de arquivo (contém extensão de imagem)
+    if (icon.includes('.png') || icon.includes('.jpg') || icon.includes('.jpeg') || icon.includes('.gif') || icon.includes('.webp')) {
+        return `<img src="${icon}" alt="Boss icon" onerror="this.onerror=null; this.src=''; this.alt='❌ Erro: ${icon}'">`;
+    }
+    // Se não for URL nem arquivo, é emoji
+    return icon;
+}
 
+// Função para exibir os chefes no catálogo
 function displayBosses(bosses) {
     const catalog = document.getElementById('bossCatalog');
     const noResults = document.getElementById('noResults');
@@ -42,21 +56,21 @@ function displayBosses(bosses) {
     catalog.innerHTML = bosses.map(boss => `
         <div class="item-card" onclick="showBossDetails(${boss.id})">
             <div class="boss-order">${boss.order}</div>
-            <div class="item-icon">${boss.icon}</div>
+            <div class="item-icon">${renderIcon(boss.icon)}</div>
             <h3 class="item-name">${boss.name}</h3>
             <div style="text-align: center;">
                 <span class="item-difficulty difficulty-${boss.difficulty.toLowerCase().replace('-', '-')}">${boss.difficulty}</span>
             </div>
             <p class="item-description">${boss.description}</p>
             <div class="summon-info">
-                <strong>Invocação:</strong>
+                <strong>🎯 Invocação:</strong>
                 ${boss.summon}
             </div>
         </div>
     `).join('');
 }
 
-
+// Função para atualizar o contador de chefes
 function updateBossCount(count) {
     const bossCount = document.getElementById('bossCount');
     if (bossCount) {
@@ -64,7 +78,7 @@ function updateBossCount(count) {
     }
 }
 
-
+// Função para filtrar os chefes
 function filterBosses() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const difficultyFilter = document.getElementById('difficultyFilter').value;
@@ -79,7 +93,7 @@ function filterBosses() {
         return matchesSearch && matchesDifficulty;
     });
     
-   
+    // Ordenar conforme selecionado
     if (orderFilter === 'alphabetical') {
         filteredBosses.sort((a, b) => a.name.localeCompare(b.name));
     } else {
@@ -90,7 +104,7 @@ function filterBosses() {
     updateBossCount(filteredBosses.length);
 }
 
-
+// Função para mostrar detalhes do chefe no modal
 function showBossDetails(bossId) {
     const boss = allBosses.find(b => b.id === bossId);
     if (!boss) return;
@@ -99,7 +113,7 @@ function showBossDetails(bossId) {
     const modalBody = document.getElementById('modalBody');
     
     modalBody.innerHTML = `
-        <div class="modal-icon">${boss.icon}</div>
+        <div class="modal-icon">${renderIcon(boss.icon)}</div>
         <h2 class="modal-title">${boss.name}</h2>
         <div style="text-align: center; margin-bottom: 1.5rem;">
             <span class="item-difficulty difficulty-${boss.difficulty.toLowerCase().replace('-', '-')}">${boss.difficulty}</span>
@@ -111,7 +125,7 @@ function showBossDetails(bossId) {
         <p style="color: var(--text-muted); margin-bottom: 1.5rem; text-align: center; font-size: 1.1rem;">${boss.description}</p>
         
         <div class="summon-box">
-            <h4>Como Invocar</h4>
+            <h4>🎯 Como Invocar</h4>
             <p style="color: var(--text-color); line-height: 1.6;">${boss.summon}</p>
         </div>
         
@@ -119,19 +133,19 @@ function showBossDetails(bossId) {
             <h3>📊 Informações de Combate</h3>
             ${boss.health ? `
                 <div class="stat-row">
-                    <span><strong>Vida:</strong></span>
+                    <span><strong>❤️ Vida:</strong></span>
                     <span>${boss.health}</span>
                 </div>
             ` : ''}
             ${boss.defense ? `
                 <div class="stat-row">
-                    <span><strong>Defesa:</strong></span>
+                    <span><strong>🛡️ Defesa:</strong></span>
                     <span>${boss.defense}</span>
                 </div>
             ` : ''}
             ${boss.damage ? `
                 <div class="stat-row">
-                    <span><strong>Dano (Contato):</strong></span>
+                    <span><strong>⚔️ Dano (Contato):</strong></span>
                     <span>${boss.damage}</span>
                 </div>
             ` : ''}
@@ -146,7 +160,7 @@ function showBossDetails(bossId) {
         
         ${boss.rewards ? `
             <div style="background: var(--bg-color); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; border: 1px solid rgba(139, 38, 53, 0.3);">
-                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Recompensas Principais</h4>
+                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">🎁 Recompensas Principais</h4>
                 <p style="color: var(--text-muted); line-height: 1.6;">${boss.rewards}</p>
             </div>
         ` : ''}
@@ -155,7 +169,7 @@ function showBossDetails(bossId) {
     modal.style.display = 'block';
 }
 
-
+// Função para resetar filtros
 function resetFilters() {
     document.getElementById('searchInput').value = '';
     document.getElementById('difficultyFilter').value = 'all';
@@ -163,17 +177,18 @@ function resetFilters() {
     filterBosses();
 }
 
-
+// Event Listeners
 document.addEventListener('DOMContentLoaded', function() {
+    // Carrega os dados quando a página é carregada
     loadData();
     
-  
+    // Event listener para a pesquisa
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
         searchInput.addEventListener('input', filterBosses);
     }
     
-    
+    // Event listeners para os filtros
     const difficultyFilter = document.getElementById('difficultyFilter');
     if (difficultyFilter) {
         difficultyFilter.addEventListener('change', filterBosses);
@@ -184,13 +199,13 @@ document.addEventListener('DOMContentLoaded', function() {
         orderFilter.addEventListener('change', filterBosses);
     }
     
-   
+    // Event listener para o botão de reset
     const resetBtn = document.getElementById('resetBtn');
     if (resetBtn) {
         resetBtn.addEventListener('click', resetFilters);
     }
     
-   
+    // Event listeners para o modal
     const modal = document.getElementById('bossModal');
     const closeModal = document.querySelector('.close-modal');
     
@@ -200,14 +215,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-  
+    // Fecha o modal ao clicar fora dele
     window.addEventListener('click', function(event) {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
     });
     
-  
+    // Fecha o modal com a tecla ESC
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape' && modal.style.display === 'block') {
             modal.style.display = 'none';
