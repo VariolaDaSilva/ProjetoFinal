@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "King Slime",
-      "icon": "imagens/king-slime.png",
+      "icon": "./imagens/king-slime.png",
       "order": 1,
       "difficulty": "Pré-Hardmode",
       "description": "Um enorme slime coroado que governa sobre todos os outros slimes. É considerado o chefe mais fácil do jogo e é opcional, mas oferece boas recompensas iniciais.",
@@ -241,4 +241,5 @@
   ]
 
 }
+
 
