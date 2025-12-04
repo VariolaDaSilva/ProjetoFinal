@@ -22,6 +22,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background-image: url('imagens/terraria.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center top;
+    background-attachment: fixed;
     color: var(--text-color);
     min-height: 100vh;
     line-height: 1.6;
