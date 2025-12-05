@@ -35,7 +35,7 @@ function renderIcon(icon, bossName) {
         .replace(/\(.*?\)/g, '')      // Remove parênteses e conteúdo
         .trim();
     
-    const imagePath = `images/${imageName}.png`;
+    const imagePath = `imagens/${imageName}.png`;
     
     // Tenta carregar a imagem, se falhar mostra o emoji
     return `<img src="${imagePath}" alt="${bossName}" onerror="this.style.display='none'; this.parentElement.innerHTML='${icon}'">`;
@@ -230,4 +230,5 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = 'none';
         }
     });
+
 });
