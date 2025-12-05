@@ -28,6 +28,10 @@ async function loadData() {
 // Função para renderizar ícone (imagem)
 function renderIcon(icon, bossName) {
     
+    function removerAcentos(texto) {
+        return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+    
     const imageName = bossName.toLowerCase()
         .replace(/ /g, '-')           
         .replace(/'/g, '')            
