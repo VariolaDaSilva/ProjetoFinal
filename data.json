@@ -109,7 +109,7 @@
       "name": "Os Gemeos",
       "order": 8,
       "difficulty": "Hardmode",
-      "description": "Versão Hardmode mecanizada do Eye of Cthulhu. São dois chefes separados: Retinazer (dispara lasers) e Spazmatism (dispara cursed flames). Um dos três Mechanical Bosses.",
+      "description": "Versão Hardmode mecanizada do Olho de Cthulhu. São dois chefes separados: Retinazer (dispara lasers) e Spazmatism (dispara cursed flames). Um dos três Mechanical Bosses.",
       "summon": "Aparece naturalmente à noite após quebrar um Demon/Carmim Altar. Pode ser invocado com Mechanical Eye (craftado com 3 Lens, 5 Iron/Lead Bar, 6 Soul of Light em Mythril/Orichalcum Anvil) à noite.",
       "health": "20.000 cada / 30.000 cada (Expert) / 38.250 cada (Master)",
       "defense": "20 (primeira fase) / 30-35 (segunda fase)",
@@ -122,7 +122,7 @@
       "name": "O Destruidor",
       "order": 8,
       "difficulty": "Hardmode",
-      "description": "Versão Hardmode mecanizada do Eater of Worlds. Um verme mecânico gigante que dispara lasers e invoca Probes. Considerado o mais fácil dos três Mechanical Bosses.",
+      "description": "Versão Hardmode mecanizada do Devorador de Mundos. Um verme mecânico gigante que dispara lasers e invoca Probes. Considerado o mais fácil dos três Mechanical Bosses.",
       "summon": "Aparece naturalmente à noite após quebrar um Demon/Carmim Altar. Pode ser invocado com Mechanical Worm (craftado com 6 Rotten Chunk/Vertebrae, 5 Iron/Lead Bar, 6 Soul of Night em Mythril/Orichalcum Anvil) à noite.",
       "health": "80.000 / 120.000 (Expert) / 153.000 (Master) - distribuído entre segmentos",
       "defense": "30 (cabeça) / 35 (corpo) / 40 (cauda)",
@@ -224,6 +224,7 @@
   ]
 
 }
+
 
 
 
