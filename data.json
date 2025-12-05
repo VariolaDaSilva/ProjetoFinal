@@ -41,7 +41,7 @@
     },
     {
       "id": 4,
-      "name": "Cérebro de Cthulhu",
+      "name": "Cerebro de Cthulhu",
       "order": 3,
       "difficulty": "Pré-Hardmode",
       "description": "Um cérebro voador protegido por Creepers. É o chefe do Carmim e a alternativa ao Eater of Worlds. Tem duas fases: na primeira está invisível a maior parte do tempo.",
@@ -106,7 +106,7 @@
     },
     {
       "id": 9,
-      "name": "Os Gêmeos",
+      "name": "Os Gemeos",
       "order": 8,
       "difficulty": "Hardmode",
       "description": "Versão Hardmode mecanizada do Eye of Cthulhu. São dois chefes separados: Retinazer (dispara lasers) e Spazmatism (dispara cursed flames). Um dos três Mechanical Bosses.",
@@ -197,7 +197,7 @@
     },
     {
       "id": 16,
-      "name": "Cultista Lunático",
+      "name": "Cultista Lunatico",
       "order": 12,
       "difficulty": "Pós-Plantera",
       "description": "O líder de um culto misterioso que adora os Celestial Pillars. Aparece após derrotar Golem. Derrotá-lo inicia os Lunar Events, a fase final do jogo.",
